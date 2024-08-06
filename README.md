@@ -22,7 +22,27 @@ The `777finalproject_datacleaning.py` script is responsible for cleaning and pre
 - Creates a target variable indicating whether a tip was given.
 - Saves the cleaned data to a new CSV file.
 
-### Usage
+## Feature Selection
+The `777finalproject_fs.py` script is used for selecting important features that influence whether a tip is given. It uses Lasso Regression for feature selection.
+- Reading Preprocessed Data.
+- Preparing Features.
+- Assembling Features.
+- Standardizing Features.
+- Training Lasso Regression Model.
+- Extracting Important Features.
 
-```bash
-python 777finalproject_datacleaning.py <input_file> <output_file_path>
+ ## Model Training
+The `777finalproject_md.py` script trains a logistic regression model to predict whether a passenger will tip based on the selected features. It includes steps for hyperparameter tuning and model evaluation.
+- Reading Preprocessed Data.
+- Selecting Important Feature.
+- Assembling Features.
+- Indexing the Label Column.
+- Defining the Model.
+- Creating a Pipeline.
+- Hyperparameter Tuning.
+- Splitting Data.
+- Training the Model.
+- Evaluating the Model.
+
+
+
